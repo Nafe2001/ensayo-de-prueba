@@ -1,1 +1,227 @@
-    
+/* CIRCO SIMPLE - DISEÑO PROFESIONAL RESPONSIVO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 50px 30px;
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #e94560;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 40px rgba(233, 69, 96, 0.15);
+  display: block;
+}
+
+/* SECCIÓN PAYASOS */
+.clown-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #e94560;
+  margin: 50px 0 35px;
+  font-weight: 700;
+}
+
+.clown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.clown-card {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(233, 69, 96, 0.15);
+}
+
+.clown-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(233, 69, 96, 0.25);
+  border-color: rgba(233, 69, 96, 0.4);
+}
+
+.clown-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.clown-info {
+  padding: 28px;
+}
+
+.clown-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e94560;
+  margin-bottom: 10px;
+}
+
+.clown-info p {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  border-radius: 12px;
+  margin-top: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+footer p {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 992px) and (min-width: 769px) {
+  .clown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  header {
+    padding: 40px 25px;
+  }
+
+  .hero-image {
+    max-height: 350px;
+  }
+
+  .clown-image {
+    max-height: 250px;
+  }
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  header {
+    padding: 30px 20px;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .clown-section h2 {
+    font-size: 1.5rem;
+    margin: 30px 0 25px;
+  }
+
+  .clown-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero-image {
+    max-height: 250px;
+  }
+
+  .clown-image {
+    max-height: 200px;
+  }
+
+  .clown-info {
+    padding: 20px;
+  }
+
+  .clown-name {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* RESPONSIVE MÓVIL PEQUEÑO */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  .clown-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .clown-grid {
+    gap: 15px;
+  }
+}
+
